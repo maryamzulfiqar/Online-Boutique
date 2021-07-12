@@ -1,0 +1,7 @@
+Instruction:
+1. Download Android Studio from the following link:
+https://developer.android.com/studio
+2. Install Android studio and then download API level 28 and 30 from Android sdk.
+3. Then enable the developer mode of your mobile and also on the usb debugging mode.
+4. connect your device with the Laptop/Computer(in which you want to execute the code).
+5. And then load the source code in android studio and run the project. (make sure your internet is connected). 
