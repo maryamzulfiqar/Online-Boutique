@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoard">
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="145dp"
+        android:layout_height="134dp"
+        android:layout_above="@+id/textView8"
+        android:layout_alignEnd="@+id/contact"
+        android:background="@drawable/about"
+        android:onClick="about"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/sales"
+        android:layout_width="145dp"
+        android:layout_height="134dp"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignTop="@+id/about"
+        android:background="@drawable/history"
+        android:onClick="history"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="145dp"
+        android:layout_height="116dp"
+        android:layout_above="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="58dp"
+        android:layout_toEndOf="@+id/feedback"
+        android:layout_toRightOf="@+id/feedback"
+        android:background="@drawable/contact"
+        android:onClick="contact"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="145dp"
+        android:layout_height="134dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:layout_toEndOf="@+id/cateogry"
+        android:layout_toRightOf="@+id/cateogry"
+        android:background="@drawable/cart"
+        android:onClick="cart"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="145dp"
+        android:layout_height="121dp"
+        android:layout_above="@+id/textView6"
+        android:layout_alignStart="@+id/sales"
+        android:background="@drawable/feedback"
+        android:onClick="feedback"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/cateogry"
+        android:layout_width="145dp"
+        android:layout_height="134dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="26dp"
+        android:background="#FBF6F6"
+        android:foreground="@drawable/category"
+        android:onClick="category"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:background="#091A7A" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/feedback"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-12dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:text="Categories"
+        android:textColor="#E91E63"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="98dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/contact"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginStart="109dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:gravity="center"
+        android:text="Cart"
+        android:textColor="#E91E63"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="106dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/about"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:gravity="center"
+        android:text="Feedback"
+        android:textColor="#E91E63"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="152dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/about"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginStart="87dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:gravity="center"
+        android:text="Contact Us"
+        android:textColor="#E91E63"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="154dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sales"
+        android:layout_marginBottom="43dp"
+        android:gravity="center"
+        android:text="Purchase History"
+        android:textColor="#E91E63"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="146dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/about"
+        android:layout_alignTop="@+id/textView8"
+        android:gravity="center"
+        android:text="About Us"
+        android:textColor="#E91E63"
+        android:textSize="18sp" />
+
+</RelativeLayout>

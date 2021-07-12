@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAdd">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="256dp"
+        android:ems="10"
+        android:hint="Prduct Price"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="206dp"
+        android:layout_height="196dp"
+        android:layout_above="@+id/insertBtn"
+        android:layout_alignStart="@+id/name">
+
+        <RadioButton
+            android:id="@+id/sindh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sindh" />
+
+        <RadioButton
+            android:id="@+id/punjab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Punjab" />
+
+        <RadioButton
+            android:id="@+id/kpk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="KPK" />
+
+        <RadioButton
+            android:id="@+id/balochistan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Balochistan" />
+
+        <RadioButton
+            android:id="@+id/gilgitbaltistan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gilgit Baltistan" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="157dp"
+        android:layout_height="109dp"
+        android:layout_above="@+id/insertBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/rg1">
+
+        <RadioButton
+            android:id="@+id/dresses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dress" />
+
+        <RadioButton
+            android:id="@+id/shoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Shoes" />
+
+        <RadioButton
+            android:id="@+id/jewelary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jewelary" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="158dp"
+        android:layout_height="136dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="149dp"
+        android:background="#FFFFFF"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/insertBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#39A399"
+        android:onClick="sstore"
+        android:text="Insert"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#39A399"
+        android:onClick="uploadImage"
+        android:text="Upload Image"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:background="#279187"
+        android:gravity="center"
+        android:text="Add Product"
+        android:textColor="#F6F0F0"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

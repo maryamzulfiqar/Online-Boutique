@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admindBoard">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="171dp"
+        android:layout_height="155dp"
+        android:layout_above="@+id/viewSales"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="63dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#FDB0AB"
+        android:onClick="add"
+        android:text="Add Products"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="169dp"
+        android:layout_height="155dp"
+        android:layout_above="@+id/viewSales"
+        android:layout_marginBottom="63dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#FA92B5"
+        android:onClick="update"
+        android:text="Update and Delete"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/viewSales"
+        android:layout_width="172dp"
+        android:layout_height="152dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="103dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#7DD380"
+        android:onClick="viewOrders"
+        android:text="View Orders"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="111dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginRight="-6dp"
+        android:background="#599F99"
+        android:gravity="center"
+        android:text="Admin Dashboard"
+        android:textColor="#FAF4F4"
+        android:textSize="30sp" />
+
+</RelativeLayout>

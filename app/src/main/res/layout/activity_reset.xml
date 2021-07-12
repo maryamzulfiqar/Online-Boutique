@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EFF1"
+    android:gravity="center"
+    tools:context=".ResetActivity">
+
+    <Button
+        android:id="@+id/resetPass"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="154dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginStart="117dp"
+        android:background="@drawable/buttonstyle"
+        android:backgroundTint="#F889AF"
+        android:onClick="resetPassword"
+        android:text="Reset Password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="106dp"
+        android:layout_marginStart="96dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/rePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetPass"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginStart="96dp"
+        android:ems="10"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginStart="95dp"
+        android:ems="10"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="212dp"
+        android:layout_height="144dp"
+        android:layout_above="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/resetpassword" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_above="@+id/imageView"
+        android:layout_marginBottom="18dp"
+        android:background="#EA5185"
+        android:gravity="center"
+        android:text="Reset Password"
+        android:textColor="#F3F0F0"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rePass"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginStart="98dp"
+        android:text="Show Password" />
+
+</RelativeLayout>

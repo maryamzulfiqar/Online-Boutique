@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boutiquemanagement.boutiqueapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewOrder"></activity>
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".ResetActivity" />
+        <activity android:name=".DashBoard" />
+        <activity android:name=".Categories" />
+        <activity android:name=".AdminAdd" />
+        <activity android:name=".AdminDelUp" />
+        <activity android:name=".sindh" />
+        <activity android:name=".Balouchistan" />
+        <activity android:name=".Punjab" />
+        <activity android:name=".AdminDelPunjab" />
+        <activity android:name=".admindBoard" />
+        <activity android:name=".AdminDelUpBal" />
+        <activity android:name=".AdminDelKPK" />
+        <activity android:name=".AdminDelGilgit" />
+        <activity android:name=".KhaiberPK" />
+        <activity android:name=".GilgitBaltistan" />
+        <activity android:name=".about" />
+        <activity android:name=".cart" />
+        <activity android:name=".checkOut" />
+        <activity android:name=".place" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Contacts" />
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>
